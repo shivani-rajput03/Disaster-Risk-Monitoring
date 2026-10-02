@@ -1,0 +1,232 @@
+.infrastructure-exposure-card {
+  margin-top: 24px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+.infrastructure-exposure-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e8edf3;
+}
+
+.infrastructure-exposure-header h2 {
+  margin: 6px 0 6px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #172033;
+}
+
+.infrastructure-exposure-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.infrastructure-exposure-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f1f5f9;
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+.infrastructure-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.infrastructure-summary > div {
+  padding: 15px 16px;
+  background: #f8fafc;
+  border: 1px solid #e5eaf0;
+  border-radius: 10px;
+}
+
+.infrastructure-summary span {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #64748b;
+}
+
+.infrastructure-summary strong {
+  display: block;
+  font-size: 18px;
+  color: #172033;
+}
+
+.infrastructure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.infrastructure-category {
+  padding: 16px;
+  border: 1px solid #e5eaf0;
+  border-radius: 11px;
+  background: #ffffff;
+}
+
+.infrastructure-category-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.infrastructure-category-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f8fafc;
+  font-size: 17px;
+}
+
+.infrastructure-category-header strong {
+  display: block;
+  color: #172033;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.infrastructure-category-header span {
+  color: #64748b;
+  font-size: 11px;
+}
+
+.infrastructure-list {
+  margin-top: 10px;
+}
+
+.infrastructure-item {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 6px 0;
+}
+
+.infrastructure-item > span {
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.infrastructure-item p {
+  margin: 0;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.infrastructure-list small {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.infrastructure-empty {
+  margin-top: 12px;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 7px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.infrastructure-loading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px solid #e5eaf0;
+}
+
+.infrastructure-loading > span {
+  font-size: 20px;
+}
+
+.infrastructure-loading strong {
+  display: block;
+  color: #172033;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.infrastructure-loading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.infrastructure-error {
+  margin-top: 18px;
+  padding: 13px 15px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 9px;
+  color: #9a3412;
+  font-size: 12px;
+}
+
+.infrastructure-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 16px;
+  padding: 11px 13px;
+  background: #f8fafc;
+  border: 1px solid #e5eaf0;
+  border-radius: 8px;
+}
+
+.infrastructure-note span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.infrastructure-note p {
+  margin: 0;
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .infrastructure-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .infrastructure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .infrastructure-exposure-card {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,325 @@
+.hydro-exposure-card {
+  margin-top: 24px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+.hydro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.hydro-header h2 {
+  margin: 6px 0 8px;
+  font-size: 24px;
+  color: #111827;
+}
+
+.hydro-header p {
+  margin: 0;
+  max-width: 720px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.hydro-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.hydro-summary {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.hydro-summary > div {
+  padding: 17px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.hydro-summary span {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: #6b7280;
+}
+
+.hydro-summary strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 23px;
+  color: #111827;
+}
+
+.hydro-summary small {
+  display: block;
+  margin-top: 4px;
+  color: #9ca3af;
+  font-size: 11px;
+}
+
+/* =====================================================
+   FEATURE GRID
+===================================================== */
+
+.hydro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.hydro-category {
+  padding: 20px;
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.hydro-category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.hydro-category-header > span {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  border-radius: 10px;
+  font-size: 19px;
+}
+
+.hydro-category-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111827;
+}
+
+.hydro-category-header small {
+  display: block;
+  margin-top: 3px;
+  color: #9ca3af;
+  font-size: 11px;
+}
+
+/* =====================================================
+   FEATURE LIST
+===================================================== */
+
+.hydro-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hydro-feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  background: #ffffff;
+  border: 1px solid #edf0f2;
+  border-radius: 9px;
+}
+
+.hydro-feature > div {
+  min-width: 0;
+}
+
+.hydro-feature strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #374151;
+  font-size: 13px;
+}
+
+.hydro-feature span {
+  display: block;
+  margin-top: 2px;
+  color: #9ca3af;
+  font-size: 11px;
+}
+
+.hydro-feature b {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+.hydro-more {
+  padding: 8px 4px 0;
+  color: #6b7280;
+  font-size: 11px;
+  text-align: center;
+}
+
+.hydro-empty {
+  padding: 18px 10px;
+  color: #9ca3af;
+  font-size: 12px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px dashed #d1d5db;
+  border-radius: 9px;
+}
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.hydro-loading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  color: #374151;
+}
+
+.hydro-loading strong {
+  font-size: 14px;
+}
+
+.hydro-loading p {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.hydro-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #dbeafe;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: hydroSpin 0.8s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes hydroSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.hydro-error {
+  padding: 15px 18px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+  color: #9a3412;
+  font-size: 13px;
+}
+
+/* =====================================================
+   NOTE
+===================================================== */
+
+.hydro-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 14px 16px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.hydro-note > span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.hydro-note p {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   SOURCE
+===================================================== */
+
+.hydro-source {
+  margin-top: 14px;
+  color: #9ca3af;
+  font-size: 11px;
+  text-align: right;
+}
+
+.hydro-source strong {
+  color: #6b7280;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+  .hydro-summary {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .hydro-exposure-card {
+    padding: 20px;
+  }
+
+  .hydro-header {
+    flex-direction: column;
+  }
+
+  .hydro-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hydro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .hydro-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .hydro-feature {
+    align-items: flex-start;
+  }
+}
